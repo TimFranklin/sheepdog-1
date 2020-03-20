@@ -4,20 +4,14 @@ These two ansible playbooks automate the deployment and cleanup of Sheepdog and 
 
 ## To use this playbook, follow the instructions below
 
-### Create a '~.contrast.cfg file'
-The playbook relies on API credentials in this file.
+### Create and edit a '.contrast.cfg' file
+The playbook relies on API credentials in this file to connect to your target Contrast TeamServer.
 ```
 username: [username]
 service_key: [service_key]
 teamserver_url: [teamserver_url]
 teamserver_organization: [teamserver_organization]
-teamserver_url: [teamserver_url]
 api_key: [api_key]
-
-#These might not be required for the playbook to work.
-#@todo Validate the need for these fields
-agent_username: [agent_username]
-agent_service_key: [agent_service_key]
 ```
 
 ### Clone this github repo.
@@ -30,20 +24,12 @@ $ ansible-playbook ./sheepdog/ansible/main.yml
 ```
 
 ### Execute attack.sh
-**Note:** ```attack.sh``` will take approximatley 30 minutes to run
+**Note:** ```attack.sh``` will take several hours to run due to the numerous applications it will be simulating
 
 ```
 $ cd ~/webgoat7
 $ ./attack.sh
 ```
-
-
-### Demo: Start webgoat7 attack is done
-```
-$ ./webgoat.sh
-```
-
-Then browse to webgoat at http://localhost:8080/WebGoat/
 
 ## Cleanup
 ```

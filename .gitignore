@@ -3,3 +3,6 @@
 .classpath
 .project
 *retry
+.contrast.cfg
+contrast_security.yaml
+/ansible/webgoat7/

@@ -4,7 +4,7 @@
     hosts: localhost
     gather_facts: false
     vars:
-      wg7_destination: ~/webgoat7
+      wg7_destination: ./webgoat7
     tasks:
       - name: Remove Webgoat7 destination directory if it exists
         file:
