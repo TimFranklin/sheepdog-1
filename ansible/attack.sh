@@ -11,7 +11,7 @@ function ctrl_c() {
 }
 
 function webgoat {
-    java -javaagent:contrast.jar -Dcontrast.dir=working -Dcontrast.standalone.appname="$app" -Dcontrast.override.appname="$app" -Dcontrast.path="/$path" -Dcontrast.server="$server" -Dcontrast.log.daily=true -Dcontrast.level=info -jar webgoat-container-7.0.1-war-exec.jar --server.port=9090 > /dev/null 2>&1 &
+    java -javaagent:contrast.jar -Dcontrast.dir=working -Dcontrast.standalone.appname="$app" -Dcontrast.override.appname="$app" -Dcontrast.path="/$path" -Dcontrast.server="$server" -Dcontrast.log.daily=true -Dcontrast.level=info -jar webgoat-container-7.0.1-war-exec.jar --httpPort=9090 > /dev/null 2>&1 &
 }
 
 function sheepdog {
