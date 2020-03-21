@@ -24,7 +24,7 @@ $ ansible-playbook ./sheepdog/ansible/main.yml
 ```
 
 ### Execute attack.sh
-**Note:** ```attack.sh``` will take several hours to run due to the numerous applications it will be simulating
+**Note:** ```attack.sh``` will take several hours to run due to the numerous applications it will be simulating, it would be best to run this attack script overnight.
 
 ```
 $ cd ~/webgoat7
